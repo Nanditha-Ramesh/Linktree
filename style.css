@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 18px;
+    background: url('images/whale.jpg') no-repeat center center/cover;
+}
+@media screen and (max-width:414px) {
+    body{
+        background: url('images/orange.jfif') no-repeat center center/cover; 
+        /* background-image: linear-gradient(to bottom right, blue, pink);         */
+    }
+    
+}
+.profilePic{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 6%;
+    border: pink solid 10px;
+}
+.linkList{
+    margin:auto;
+    width: 50%;    
+}
+.linkList a{
+    background: url('images/galaxy.jpg');
+    border: 2px pink solid;
+    display: block;
+    margin: 20px;
+    padding: 10px 10px;
+    text-decoration:none;
+    color:purple;
+}
+a:hover{
+    color: white;
+}
+
+/* @media screen and (max-width: 414px) {
+    background-image: url('images/bts2.jpg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+  }*/
