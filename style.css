@@ -19,6 +19,7 @@ body{
     position: relative;
     animation: change 5s ease-in-out infinite;
 }
+
 @keyframes change{
     0%{
         background-position: 0 50%;
@@ -31,8 +32,9 @@ body{
     }
 }
 .Name{
+    letter-spacing: 2px;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
 }
 .profilePic{
     display:block;
@@ -45,7 +47,7 @@ body{
 }
 .linkList{
     margin:auto;
-    width: 50%;    
+    width: 60%;    
 }
 .linkList a{
     border: 5px white solid;
@@ -57,7 +59,22 @@ body{
     color:white;
     box-shadow: orange 2px;
 }
+@media screen and (max-width:414px) {
+    .Name{
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+    .linkList{
+        width: 400px;
+    }
+}
 a:hover{
     /* color: orangered; */
     background-color: #23D5AB;
+}
+h2{
+    display: inline;
+}
+.icon{
+    margin-top: 4px;
 }
