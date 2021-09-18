@@ -1,4 +1,5 @@
 *{
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -6,16 +7,32 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     overflow: hidden;
-    min-height: 100vh;
     font-size: 18px;
-    background: url('images/whale.jpg') no-repeat center center/cover;
+    margin: 0;
 }
-@media screen and (max-width:414px) {
-    body{
-        background: url('images/orange.jfif') no-repeat center center/cover; 
-        /* background-image: linear-gradient(to bottom right, blue, pink);         */
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #47d523,#23D5AB,#db4bb0,#FF6200,#fbfd77);
+    background-size: 200% 200%;
+    position: relative;
+    animation: change 5s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
     }
-    
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.Name{
+    color: white;
+    font-size: 30px;
 }
 .profilePic{
     display:block;
@@ -23,28 +40,24 @@ body{
     margin-right: auto;
     width: 200px;
     border-radius: 50%;
-    margin-top: 6%;
-    border: pink solid 10px;
+    margin-top:10PX;
+    border: white solid 10px;
 }
 .linkList{
     margin:auto;
     width: 50%;    
 }
 .linkList a{
-    background: url('images/galaxy.jpg');
-    border: 2px pink solid;
+    border: 5px white solid;
     display: block;
     margin: 20px;
     padding: 10px 10px;
     text-decoration:none;
-    color:purple;
+    border-radius: 0px 30px 0px 30px ;
+    color:white;
+    box-shadow: orange 2px;
 }
 a:hover{
-    color: white;
+    /* color: orangered; */
+    background-color: #23D5AB;
 }
-
-/* @media screen and (max-width: 414px) {
-    background-image: url('images/bts2.jpg');
-    background-repeat: no-repeat;
-    background-size: 500px;
-  }*/
